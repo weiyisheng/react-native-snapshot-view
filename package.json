@@ -1,28 +1,26 @@
 {
   "name": "react-native-snapshot-view",
   "description": "A React Native Component which you can snapshot.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": {
-   "type": "git",
-   "url": "https://github.com/weiyisheng/react-native-snapshot.git"
- },
- "nativePackage": true,
- "author": "weiyisheng",
- "contributors": [
-   {
-     "name": "weiyisheng",
-     "email": "weiyisheng1991@gmail.com"
-   }
- ],
- "keyword": [
-   "react-native",
-   "react-native-snapshot",
-   "react",
-   "native",
-   "snapshot"
- ],
- "scripts": {
-
- }
+    "type": "git",
+    "url": "https://github.com/weiyisheng/react-native-snapshot.git"
+  },
+  "nativePackage": true,
+  "author": "weiyisheng",
+  "contributors": [
+    {
+      "name": "weiyisheng",
+      "email": "weiyisheng1991@gmail.com"
+    }
+  ],
+  "keyword": [
+    "react-native",
+    "react-native-snapshot",
+    "react",
+    "native",
+    "snapshot"
+  ],
+  "scripts": {}
 }
