@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/weiyisheng/react-native-snapshot.git"
+    "url": "https://github.com/weiyisheng/react-native-snapshot-view.git"
   },
   "nativePackage": true,
   "author": "weiyisheng",
@@ -17,6 +17,7 @@
   ],
   "keyword": [
     "react-native",
+    "react-native-snapshot-view",
     "react-native-snapshot",
     "react",
     "native",
