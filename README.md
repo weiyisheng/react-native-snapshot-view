@@ -1,4 +1,4 @@
-# react-native-awesome-pro
+# react-native-snapshot
 
 
-One components set for ReactNative.
+snapshot for react-native Components.
