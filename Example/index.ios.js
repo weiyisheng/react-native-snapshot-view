@@ -15,7 +15,7 @@ import {
 } from 'react-native';
 
 import SnapShotView from 'react-native-snapshot-view'
-console.log(" SnapShotView : ", SnapShotView);
+
 export default class Example extends Component {
 
   constructor(props) {
@@ -40,7 +40,21 @@ export default class Example extends Component {
             })
           }}/>
 
-
+          <SnapShotView
+            shotNumber={this.state.shotNumber}
+            fileName={"myImage"}
+            onShoted={events => {
+              console.log(" events  ----- ", events);
+              this.setState({
+                imageUri: events.nativeEvent.filePath
+              })
+            }}>
+            <View style={{width: 100, height: 300,
+              backgroundColor: "blue", justifyContent: "center",
+              alignItems: "center"}}>
+              <Text>react native SnapShot</Text>
+            </View>
+          </SnapShotView>
 
           <Image
             style={{width: 100, height: 100, marginTop: 20}}
@@ -50,18 +64,9 @@ export default class Example extends Component {
   }
 }
 
-// <SnapShotView
-//   shotNumber={this.state.shotNumber}
-//   fileName={"myImage"}
-//   onShoted={events => {
-//     console.log(" events  ----- ", events);
-//   }}>
-//   <View style={{width: 100, height: 300,
-//     backgroundColor: "blue", justifyContent: "center",
-//     alignItems: "center"}}>
-//     <Text>react native SnapShot</Text>
-//   </View>
-// </SnapShotView>
+
+
+
 
 const styles = StyleSheet.create({
   container: {

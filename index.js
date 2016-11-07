@@ -1,5 +1,3 @@
-import SnapShot from './snapshot/SnapShot'
+import SnapShotView from './snapshot/SnapShot'
 
-const SnapShotView = SnapShot
-
-module.export = SnapShotView
+export default SnapShotView
