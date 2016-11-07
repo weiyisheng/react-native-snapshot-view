@@ -1,7 +1,7 @@
 {
   "name": "react-native-snapshot-view",
   "description": "A React Native Component which you can snapshot.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "repository": {
     "type": "git",
