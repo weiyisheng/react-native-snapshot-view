@@ -1,4 +1,4 @@
-package wys.cn.android.snapshot;
+package com.cn.weiyisheng.snapshot;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

@@ -1,4 +1,4 @@
-package wys.cn.android;
+package com.cn.weiyisheng;
 
 import org.junit.Test;
 

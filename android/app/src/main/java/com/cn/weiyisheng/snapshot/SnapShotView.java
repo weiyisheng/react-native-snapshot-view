@@ -1,4 +1,4 @@
-package wys.cn.android.snapshot;
+package com.cn.weiyisheng.snapshot;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -73,8 +73,8 @@ public class SnapShotView extends ReactViewGroup {
                     String path = Environment.getExternalStorageDirectory().toString();
 
                     String imageName = "";
-                    if(imageType.equals("png")) {
-                        imageName = that.fileName.equals("not set a file name") ? (that.fileName + ".png") : "SnapShotView.png";
+                    if (imageType.equals("png")) {
+                        imageName = that.fileName.equals("not set a file name") ? "SnapShotView.png" : (that.fileName + ".png");
                         File imageFile = new File(path, imageName);
                         FileOutputStream out = new FileOutputStream(imageFile);
                         image.compress(Bitmap.CompressFormat.PNG, 90, out);

@@ -1,4 +1,4 @@
-package wys.cn.android;
+package com.cn.weiyisheng;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("wys.cn.android", appContext.getPackageName());
+        assertEquals("com.cn.android", appContext.getPackageName());
     }
 }

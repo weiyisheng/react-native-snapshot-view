@@ -15,7 +15,7 @@ import {
 } from 'react-native';
 
 import SnapShotView from 'react-native-snapshot-view'
-console.log(" SnapShotView : ", SnapShotView);
+
 export default class Example extends Component {
 
   constructor(props) {
@@ -49,7 +49,7 @@ export default class Example extends Component {
                 imageUri: events.nativeEvent.filePath
               })
             }}>
-            <View style={{width: 100, height: 300,
+            <View style={{width: 100, height: 200,
               backgroundColor: "blue", justifyContent: "center",
               alignItems: "center"}}>
               <Text>react native SnapShot</Text>
@@ -57,9 +57,9 @@ export default class Example extends Component {
           </SnapShotView>
 
           <Image
-            style={{width: 100, height: 100, marginTop: 20, backgroundColor: "red"}}
-            source={{uri: this.state.imageUri}}
-            resizeMode={"cover"}/>
+            style={{width: 600, height: 700}}
+            source={{uri: this.state.imageUri, isStatic: true}}
+            resizeMode={"contain"}/>
       </View>
     );
   }
@@ -73,6 +73,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F5FCFF',
+    justifyContent: "center",
+    alignItems: "center"
   }
 });
 
