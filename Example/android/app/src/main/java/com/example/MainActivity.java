@@ -1,5 +1,7 @@
 package com.example;
 
+import android.util.Log;
+
 import com.facebook.react.ReactActivity;
 
 public class MainActivity extends ReactActivity {
@@ -10,6 +12,7 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
+        Log.i("WYS", "start a------");
         return "Example";
     }
 }

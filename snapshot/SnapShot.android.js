@@ -1,12 +1,12 @@
 import React from 'react'
 import { View, requireNativeComponent, NativeAppEventEmitter } from 'react-native'
 
-class SnapShot extends React.Component {
+class SnapShotView extends React.Component {
 
   _onChange(event) {
-    const { onShooted } = this.props
-    if(onShooted) {
-      onShooted(event)
+    const { onShoted } = this.props
+    if(onShoted) {
+      onShoted(event)
     }
   }
 
@@ -15,15 +15,15 @@ class SnapShot extends React.Component {
   }
 }
 
-SnapShot.propTypes = {
+SnapShotView.propTypes = {
   ...View.propTypes,
-  shoot: React.PropTypes.number,
+  shotNumber: React.PropTypes.number,
   fileName: React.PropTypes.string,
-  onShooted: React.PropTypes.func
+  onShoted: React.PropTypes.func
 }
 
-const RCTSnapShot = requireNativeComponent('RCTSnapShot', SnapShot, {
+const RCTSnapShot = requireNativeComponent('RCTSnapShotView', SnapShotView, {
   nativeOnly: { onChange: true}
 })
 
-export default SnapShot
+export default SnapShotView

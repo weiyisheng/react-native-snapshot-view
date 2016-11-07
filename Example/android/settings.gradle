@@ -1,3 +1,6 @@
 rootProject.name = 'Example'
 
 include ':app'
+
+include ':react-native-snapshot-view'
+project(':react-native-snapshot-view').projectDir = new File(settingsDir, '../node_modules/react-native-snapshot-view/android/app')

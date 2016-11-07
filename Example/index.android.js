@@ -9,45 +9,71 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  TouchableOpacity,
+  Image
 } from 'react-native';
 
+import SnapShotView from 'react-native-snapshot-view'
+console.log(" SnapShotView : ", SnapShotView);
 export default class Example extends Component {
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      shotNumber: 0,
+      imageUri: ""
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+        <TouchableOpacity
+          style={{width: 100, height: 100,
+            backgroundColor: "red", marginBottom: 20}}
+          onPress={() => {
+            const shotNumber = this.state.shotNumber + 1
+            this.setState({
+              shotNumber
+            })
+          }}/>
+
+          <SnapShotView
+            shotNumber={this.state.shotNumber}
+            fileName={"myImage"}
+            onShoted={events => {
+              console.log(" events  ----- ", events.nativeEvent.filePath);
+              this.setState({
+                imageUri: events.nativeEvent.filePath
+              })
+            }}>
+            <View style={{width: 100, height: 300,
+              backgroundColor: "blue", justifyContent: "center",
+              alignItems: "center"}}>
+              <Text>react native SnapShot</Text>
+            </View>
+          </SnapShotView>
+
+          <Image
+            style={{width: 100, height: 100, marginTop: 20, backgroundColor: "red"}}
+            source={{uri: this.state.imageUri}}
+            resizeMode={"cover"}/>
       </View>
     );
   }
 }
 
+
+
+
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  }
 });
 
 AppRegistry.registerComponent('Example', () => Example);
