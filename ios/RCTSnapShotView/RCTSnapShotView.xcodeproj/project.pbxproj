@@ -7,29 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C3183D01DC88182009FA42C /* SnapShotViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3183CF1DC88182009FA42C /* SnapShotViewManager.m */; };
+		5C6DBE521DCC7AC500A3C0EB /* RCTSnapShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6DBE511DCC7AC500A3C0EB /* RCTSnapShotView.m */; };
+		5C6DBE531DCC7AC500A3C0EB /* RCTSnapShotView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5C6DBE501DCC7AC500A3C0EB /* RCTSnapShotView.h */; };
+		5C6DBE5B1DCC7B0800A3C0EB /* RCTSnapShotViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6DBE5A1DCC7B0800A3C0EB /* RCTSnapShotViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5C3183B81DC87D7D009FA42C /* CopyFiles */ = {
+		5C6DBE4B1DCC7AC500A3C0EB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				5C6DBE531DCC7AC500A3C0EB /* RCTSnapShotView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5C3183BA1DC87D7D009FA42C /* libReactNativeComponentSnapShot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeComponentSnapShot.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C3183CE1DC88182009FA42C /* SnapShotViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapShotViewManager.h; sourceTree = "<group>"; };
-		5C3183CF1DC88182009FA42C /* SnapShotViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapShotViewManager.m; sourceTree = "<group>"; };
+		5C6DBE4D1DCC7AC500A3C0EB /* libRCTSnapShotView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTSnapShotView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6DBE501DCC7AC500A3C0EB /* RCTSnapShotView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTSnapShotView.h; sourceTree = "<group>"; };
+		5C6DBE511DCC7AC500A3C0EB /* RCTSnapShotView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTSnapShotView.m; sourceTree = "<group>"; };
+		5C6DBE591DCC7B0800A3C0EB /* RCTSnapShotViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTSnapShotViewManager.h; sourceTree = "<group>"; };
+		5C6DBE5A1DCC7B0800A3C0EB /* RCTSnapShotViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTSnapShotViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5C3183B71DC87D7D009FA42C /* Frameworks */ = {
+		5C6DBE4A1DCC7AC500A3C0EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,97 +44,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5C3183B11DC87D7D009FA42C = {
+		5C6DBE441DCC7AC500A3C0EB = {
 			isa = PBXGroup;
 			children = (
-				5C3183BC1DC87D7D009FA42C /* ReactNativeComponentSnapShot */,
-				5C3183BB1DC87D7D009FA42C /* Products */,
+				5C6DBE4F1DCC7AC500A3C0EB /* RCTSnapShotView */,
+				5C6DBE4E1DCC7AC500A3C0EB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5C3183BB1DC87D7D009FA42C /* Products */ = {
+		5C6DBE4E1DCC7AC500A3C0EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C3183BA1DC87D7D009FA42C /* libReactNativeComponentSnapShot.a */,
+				5C6DBE4D1DCC7AC500A3C0EB /* libRCTSnapShotView.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5C3183BC1DC87D7D009FA42C /* ReactNativeComponentSnapShot */ = {
+		5C6DBE4F1DCC7AC500A3C0EB /* RCTSnapShotView */ = {
 			isa = PBXGroup;
 			children = (
-				5C3183CE1DC88182009FA42C /* SnapShotViewManager.h */,
-				5C3183CF1DC88182009FA42C /* SnapShotViewManager.m */,
+				5C6DBE501DCC7AC500A3C0EB /* RCTSnapShotView.h */,
+				5C6DBE511DCC7AC500A3C0EB /* RCTSnapShotView.m */,
+				5C6DBE591DCC7B0800A3C0EB /* RCTSnapShotViewManager.h */,
+				5C6DBE5A1DCC7B0800A3C0EB /* RCTSnapShotViewManager.m */,
 			);
-			path = ReactNativeComponentSnapShot;
+			path = RCTSnapShotView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5C3183B91DC87D7D009FA42C /* ReactNativeComponentSnapShot */ = {
+		5C6DBE4C1DCC7AC500A3C0EB /* RCTSnapShotView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C3183C31DC87D7D009FA42C /* Build configuration list for PBXNativeTarget "ReactNativeComponentSnapShot" */;
+			buildConfigurationList = 5C6DBE561DCC7AC500A3C0EB /* Build configuration list for PBXNativeTarget "RCTSnapShotView" */;
 			buildPhases = (
-				5C3183B61DC87D7D009FA42C /* Sources */,
-				5C3183B71DC87D7D009FA42C /* Frameworks */,
-				5C3183B81DC87D7D009FA42C /* CopyFiles */,
+				5C6DBE491DCC7AC500A3C0EB /* Sources */,
+				5C6DBE4A1DCC7AC500A3C0EB /* Frameworks */,
+				5C6DBE4B1DCC7AC500A3C0EB /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ReactNativeComponentSnapShot;
-			productName = ReactNativeComponentSnapShot;
-			productReference = 5C3183BA1DC87D7D009FA42C /* libReactNativeComponentSnapShot.a */;
+			name = RCTSnapShotView;
+			productName = RCTSnapShotView;
+			productReference = 5C6DBE4D1DCC7AC500A3C0EB /* libRCTSnapShotView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5C3183B21DC87D7D009FA42C /* Project object */ = {
+		5C6DBE451DCC7AC500A3C0EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = gemini;
 				TargetAttributes = {
-					5C3183B91DC87D7D009FA42C = {
+					5C6DBE4C1DCC7AC500A3C0EB = {
 						CreatedOnToolsVersion = 8.1;
-						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 5C3183B51DC87D7D009FA42C /* Build configuration list for PBXProject "ReactNativeComponentSnapShot" */;
+			buildConfigurationList = 5C6DBE481DCC7AC500A3C0EB /* Build configuration list for PBXProject "RCTSnapShotView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 5C3183B11DC87D7D009FA42C;
-			productRefGroup = 5C3183BB1DC87D7D009FA42C /* Products */;
+			mainGroup = 5C6DBE441DCC7AC500A3C0EB;
+			productRefGroup = 5C6DBE4E1DCC7AC500A3C0EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5C3183B91DC87D7D009FA42C /* ReactNativeComponentSnapShot */,
+				5C6DBE4C1DCC7AC500A3C0EB /* RCTSnapShotView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5C3183B61DC87D7D009FA42C /* Sources */ = {
+		5C6DBE491DCC7AC500A3C0EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C3183D01DC88182009FA42C /* SnapShotViewManager.m in Sources */,
+				5C6DBE5B1DCC7B0800A3C0EB /* RCTSnapShotViewManager.m in Sources */,
+				5C6DBE521DCC7AC500A3C0EB /* RCTSnapShotView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5C3183C11DC87D7D009FA42C /* Debug */ = {
+		5C6DBE541DCC7AC500A3C0EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -169,14 +176,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../node_modules/react-native/React/**",
+					"$(SRCROOT)/../../../react-native/React/**",
+					"$(SRCROOT)/../../Example/node_modules/react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		5C3183C21DC87D7D009FA42C /* Release */ = {
+		5C6DBE551DCC7AC500A3C0EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -210,60 +222,58 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../node_modules/react-native/React/**",
+					"$(SRCROOT)/../../../react-native/React/**",
+					"$(SRCROOT)/../../Example/node_modules/react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		5C3183C41DC87D7D009FA42C /* Debug */ = {
+		5C6DBE571DCC7AC500A3C0EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		5C3183C51DC87D7D009FA42C /* Release */ = {
+		5C6DBE581DCC7AC500A3C0EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5C3183B51DC87D7D009FA42C /* Build configuration list for PBXProject "ReactNativeComponentSnapShot" */ = {
+		5C6DBE481DCC7AC500A3C0EB /* Build configuration list for PBXProject "RCTSnapShotView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C3183C11DC87D7D009FA42C /* Debug */,
-				5C3183C21DC87D7D009FA42C /* Release */,
+				5C6DBE541DCC7AC500A3C0EB /* Debug */,
+				5C6DBE551DCC7AC500A3C0EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C3183C31DC87D7D009FA42C /* Build configuration list for PBXNativeTarget "ReactNativeComponentSnapShot" */ = {
+		5C6DBE561DCC7AC500A3C0EB /* Build configuration list for PBXNativeTarget "RCTSnapShotView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C3183C41DC87D7D009FA42C /* Debug */,
-				5C3183C51DC87D7D009FA42C /* Release */,
+				5C6DBE571DCC7AC500A3C0EB /* Debug */,
+				5C6DBE581DCC7AC500A3C0EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5C3183B21DC87D7D009FA42C /* Project object */;
+	rootObject = 5C6DBE451DCC7AC500A3C0EB /* Project object */;
 }

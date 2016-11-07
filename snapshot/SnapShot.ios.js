@@ -10,11 +10,11 @@ class SnapShot extends React.Component {
 
 SnapShot.propTypes = {
   ...View.propTypes,
-  shoot: React.PropTypes.number,
+  shotNumber: React.PropTypes.number,
   fileName: React.PropTypes.string,
-  onShooted: React.PropTypes.func
+  onShoted: React.PropTypes.func
 }
 
-const RCTSnapShot = requireNativeComponent('RCTSnapShot', SnapShot)
+const RCTSnapShot = requireNativeComponent('RCTSnapShotView', SnapShot)
 
 export default SnapShot
