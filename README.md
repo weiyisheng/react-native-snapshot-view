@@ -5,9 +5,8 @@ A component can generate to image (.png only now) for ios + android.
 
 
 ##Install
-```
-npm install react-native-image-picker@latest --save
-```
+>npm install react-native-image-picker@latest --save
+
 
 ##Link
 ###ios
