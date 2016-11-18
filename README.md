@@ -10,12 +10,16 @@ A component can generate to image (.png only now) for ios + android.
 ```npm install react-native-image-picker@latest --save```
 
 ##Link
-###ios
+###React Native >= 0.29 `$react-native link`
+  NOTE: if you are using `$react-native link` and there is a error in `cannot find symbol
+import com.cn.weiyisheng.SnapShotViewPackage;`, please change the package to `import com.cn.weiyisheng.snapshot.SnapShotViewPackage;`, lose ".snapshot".<br>
+###React Native < 0.29 ,follow:
+####ios
   1.In the XCode's "Project navigator", right click on your project's Libraries folder ➜ `Add Files to <...>`<br>
   2.Go to `node_modules` ➜ `react-native-snapshot-view` ➜ `ios` ➜ `RCTSnapShotView` ➜ select `RCTSnapShotView.xcodeproj`<br>
   3.Add `RCTSnapShotView.a` to `Build Phases -> Link Binary With Libraries`<br>
   4.Compile and have fun<br>
-###android
+####android
   ```gradle
   //file: android/settings.gradle
   ...
